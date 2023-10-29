@@ -18,7 +18,7 @@ class MasterSingletonPattern{
         SingletonPattern instance = SingletonPattern.getInstance();
         SingletonPattern instance1 = SingletonPattern.getInstance();
         if(instance == instance1){
-            System.out.print("Same instance");
+            System.out.print("same instance");
         }
     }
 }
