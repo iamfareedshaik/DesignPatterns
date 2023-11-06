@@ -2,7 +2,7 @@ interface Command{
     void execute();
 }
 
-public class Light {
+class Light {
     public void turnOn(){
         System.out.print("Light is on");
     }
@@ -12,7 +12,7 @@ public class Light {
     }
 }
 
-public class TurnOnLightCommand implements Command {
+class TurnOnLightCommand implements Command {
     private Light light;
 
     public TurnOnLightCommand(Light light) {
@@ -24,7 +24,7 @@ public class TurnOnLightCommand implements Command {
     }
 }
 
-public class TurnOffLightCommand implements Command {
+class TurnOffLightCommand implements Command {
     private Light light;
 
     public TurnOffLightCommand(Light light) {
@@ -37,7 +37,7 @@ public class TurnOffLightCommand implements Command {
 }
 
 
-public class RemoteControl {
+class RemoteControl {
     private Command command;
 
     public void setCommand(Command command) {
@@ -49,7 +49,7 @@ public class RemoteControl {
     }
 }
 
-public class LightSwitchApp {
+class LightSwitchApp {
     public static void main(String[] args) {
         Light light = new Light();
 
